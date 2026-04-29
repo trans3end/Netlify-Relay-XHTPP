@@ -1,0 +1,21 @@
+{
+  "name": "netlify-xhttp-relay",
+  "version": "1.0.1",
+  "description": "Optimized Netlify Edge Function HTTP relay",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "netlify dev --edge",
+    "build": "node scripts/validate.js",
+    "predeploy": "npm run build",
+    "test": "node scripts/test.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@netlify/edge-functions": "^2.0.0",
+    "netlify-cli": "^17.0.0"
+  }
+}
